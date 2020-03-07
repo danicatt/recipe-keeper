@@ -1,30 +1,138 @@
-body {
-    background-color: lightblue;
-    margin: 0px;
+* {
+	box-sizing: border-box;
+	margin: 0;
 }
 
-#h1 {
-    position: absolute;
-    text-align: center;
-    left: 40%;
+h1 {
+	font-family: 'Sen', sans-serif;
 }
 
-.click {
-    font-size: 20px;
-    width: 450px;
-    position: absolute;
-    margin-left: 35%;
-    margin-top: 460px;
-    
+.titlebar {
+	background-color: #FA3C5A;
+	width: 100%;
+	padding: 2%;
+	text-align:center;
+}
+
+.block1 {
+	position: absolute;
+	margin-left: 8px;
+	background-color: #FA3C5A;
+	top: -10px;
+	width: 15px;
+	height:25px;
+	border-radius: 30%;
+	animation: falling 5s infinite;
+	animation-delay:0.5s;
+}
+
+.block2 {
+	position: absolute;
+	margin-left: 273px;
+	background-color: #FA3C5A;
+	top: -10px;
+	width: 15px;
+	height:25px;
+	border-radius: 30%;
+	animation: falling 7s infinite;
+	animation-delay: 2s;
+}
+
+.block3 {
+	position: absolute;
+	margin-left: 567px;
+	background-color: #FA3C5A;
+	top: -10px;
+	width: 15px;
+	height:25px;
+	border-radius: 30%;
+	animation: falling 4.5s infinite;
+	animation-delay:4s;
+}
+
+.block4 {
+	position: absolute;
+	margin-left: 861px;
+	background-color: #FA3C5A;
+	top: -10px;
+	width: 15px;
+	height:25px;
+	border-radius: 30%;
+	animation: falling 7s infinite;
+	animation-delay: 3.5s;
+}
+
+.block5 {
+	position: absolute;
+	margin-left: 1134px;
+	background-color: #FA3C5A;
+	top: -10px;
+	width: 15px;
+	height:25px;
+	border-radius: 30%;
+	animation: falling 4s infinite;
+	animation-delay: 8s;
+}
+
+.block6 {
+	position: absolute;
+	margin-left: 1420px;
+	background-color: #FA3C5A;
+	top: -10px;
+	width: 15px;
+	height:25px;
+	border-radius: 30%;
+	animation: falling 5.5s infinite;
+	animation-delay:3s;
 }
 
 .colouredBox {
-    background-color: lemonchiffon;
-    position: absolute;
-    margin-left: 200px;
-    margin-top: 100px;
-    width: 75%;
-    height: 75%;
-
+	display: block ;
+	background-color: #BAF1E4;
+	padding: 6%;
+	margin: 0 auto;
 }
+
+#recipegenerator {
+	width: 50%;
+	margin: 20px auto;
+	text-align: center;
+	background-color: #fc6c8c;
+	font-family: 'Nanum Gothic', sans-serif;
+	border: 6px solid #48b9a9;
+	padding: 8%;
+	font-size: 1.4rem;
+}
+
+.click {
+	position: relative;
+	transition: transform;
+	text-align: center;
+	font-family: 'Poiret One';
+	background-color: #48b9a8;
+	border: 4px solid #f4908a;
+	padding: 2%;
+	font-size: 1.3rem;
+	margin-left: 42%;
+	
+}
+
+.click:hover {
+	transform: scale(1.1);
+	
+}
+
+footer {
+	position:fixed;
+	background-color: #FA3C5A;
+	width: 100%;
+	padding: 3.26%;
+}
+
+@keyframes falling{
+	from {transform: translateY(0)}
+	to {transform: translateY(700px)}
+}
+
+
 
